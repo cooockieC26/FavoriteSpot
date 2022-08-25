@@ -42,6 +42,17 @@ p{
 	font-size: 24px;
 }
 
+ol{
+	text-align: left;
+	position: relative; left: 20%;
+	width: 60%; 
+	font-size: 32px;
+}
+
+li{
+	
+}
+
 .title{
 	width: 80%
 	font-size: 200%;
@@ -63,32 +74,743 @@ p{
 	border: thick inset palegreen;
 }
 
-.buses{
-	
+/* お店 */
+/* ひろめ市場 */
+.hirome_open {
+	cursor:pointer;
+}
+#hirome_pop-up {
+	display: none;
+}
+.hirome_overlay {
+	display: none;
+}
+#hirome_pop-up:checked + .hirome_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.hirome_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
 }
 
-.hotels{
-	
+.hirome_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
 }
 
-.make{
-	
+/* 土佐茶カフェ */
+.tosacha_open {
+	cursor:pointer;
+}
+#tosacha_pop-up {
+	display: none;
+}
+.tosacha_overlay {
+	display: none;
+}
+#tosacha_pop-up:checked + .tosacha_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.tosacha_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
 }
 
-.charge{
-	position: relative; left: 20%;
-	width: 60%; 
-	font-size: 24px;
+.tosacha_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
 }
 
-.hotels_notice{
-	color: red;
-	font-weight: bold;
+/* 高知プリン亭 */
+.pudding_open {
+	cursor:pointer;
+}
+#pudding_pop-up {
+	display: none;
+}
+.pudding_overlay {
+	display: none;
+}
+#pudding_pop-up:checked + .pudding_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.pudding_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
 }
 
-.make_notice{
-	width: 60%;
-	text-align: left;
-	color: red;
-	position: relative; left: 20%;
+.pudding_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
 }
+
+/* メフィストフェレス */
+.mephisto_open {
+	cursor:pointer;
+}
+#mephisto_pop-up {
+	display: none;
+}
+.mephisto_overlay {
+	display: none;
+}
+#mephisto_pop-up:checked + .mephisto_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.mephisto_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.mephisto_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* SHAREcafe */
+.sharecafe_open {
+	cursor:pointer;
+}
+#sharecafe_pop-up {
+	display: none;
+}
+.sharecafe_overlay {
+	display: none;
+}
+#sharecafe_pop-up:checked + .sharecafe_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.sharecafe_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.sharecafe_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* pipeau */
+.pipeau_open {
+	cursor:pointer;
+}
+#pipeau_pop-up {
+	display: none;
+}
+.pipeau_overlay {
+	display: none;
+}
+#pipeau_pop-up:checked + .pipeau_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.pipeau_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.pipeau_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* ペーパーメッセージおびやまち店&tonari */
+.tonari_open {
+	cursor:pointer;
+}
+#tonari_pop-up {
+	display: none;
+}
+.tonari_overlay {
+	display: none;
+}
+#tonari_pop-up:checked + .tonari_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.tonari_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.tonari_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* MuuMuu */
+.muumuu_open {
+	cursor:pointer;
+}
+#muumuu_pop-up {
+	display: none;
+}
+.muumuu_overlay {
+	display: none;
+}
+#muumuu_pop-up:checked + .muumuu_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.muumuu_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.muumuu_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* Le Petit Palais */
+.le_open {
+	cursor:pointer;
+}
+#le_pop-up {
+	display: none;
+}
+.le_overlay {
+	display: none;
+}
+#le_pop-up:checked + .le_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.le_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.le_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* フライシュ ケーニッヒ */
+.konig_open {
+	cursor:pointer;
+}
+#konig_pop-up {
+	display: none;
+}
+.konig_overlay {
+	display: none;
+}
+#konig_pop-up:checked + .konig_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.konig_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.konig_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* すみび焼てん */
+.ten_open {
+	cursor:pointer;
+}
+#ten_pop-up {
+	display: none;
+}
+.ten_overlay {
+	display: none;
+}
+#ten_pop-up:checked + .ten_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.ten_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.ten_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* MASALA */
+.masala_open {
+	cursor:pointer;
+}
+#masala_pop-up {
+	display: none;
+}
+.masala_overlay {
+	display: none;
+}
+#masala_pop-up:checked + .masala_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.masala_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.masala_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/*VertVert*/
+.vert_open {
+	cursor:pointer;
+}
+#vert_pop-up {
+	display: none;
+}
+.vert_overlay {
+	display: none;
+}
+#vert_pop-up:checked + .vert_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.vert_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.vert_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* UF */
+.uf_open {
+	cursor:pointer;
+}
+#uf_pop-up {
+	display: none;
+}
+.uf_overlay {
+	display: none;
+}
+#uf_pop-up:checked + .uf_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.uf_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.uf_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* ぜにや菓子店 */
+.zeniya_open {
+	cursor:pointer;
+}
+#zeniya_pop-up {
+	display: none;
+}
+.zeniya_overlay {
+	display: none;
+}
+#zeniya_pop-up:checked + .zeniya_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.zeniya_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.zeniya_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* マツオカパウンド */
+.matsuoka_open {
+	cursor:pointer;
+}
+#matsuoka_pop-up {
+	display: none;
+}
+.matsuoka_overlay {
+	display: none;
+}
+#matsuoka_pop-up:checked + .matsuoka_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.matsuoka_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.matsuoka_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* Oz Bagals */
+.oz_open {
+	cursor:pointer;
+}
+#oz_pop-up {
+	display: none;
+}
+.oz_overlay {
+	display: none;
+}
+#oz_pop-up:checked + .oz_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.oz_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.oz_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* を菓子と．Coffee and Bake */
+.wokashi_open {
+	cursor:pointer;
+}
+#wokashi_pop-up {
+	display: none;
+}
+.wokashi_overlay {
+	display: none;
+}
+#wokashi_pop-up:checked + .wokashi_overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.wokashi_window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+
+.wokashi_close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+/* 店終わり */
