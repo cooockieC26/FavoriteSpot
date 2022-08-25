@@ -1,1 +1,94 @@
+@charset "utf-8";
 
+body{
+	text-align: center;
+	background: -moz-linear-gradient(
+		top left,
+		transparent 5%,
+		palegreen 30%,
+		transparent 100%
+	);
+	background: -webkit-linear-gradient(
+		top left,
+		transparent 5%,
+		palegreen 30%,
+		transparent 100%
+	);
+	background: linear-gradient(
+		to bottom right,
+		transparent 5%,
+		palegreen 30%,
+		transparent 100%
+	);
+	background-attachment: fixed !important;
+	font-family: "ヒラギノ明朝 Pro"
+}
+
+h1{
+	font-size: 64px;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 48px;
+	font-weight: bold;
+}
+
+h3{
+	font-size: 32px;
+}
+
+p{
+	font-size: 24px;
+}
+
+.title{
+	width: 80%
+	font-size: 200%;
+	background-image: -moz-linear-gradient(
+		top left,
+		lightgreen 90%,
+		transparent 100%
+	);
+	background-image: -webkit-linear-gradient(
+		top left,
+		lightgreen 90%,
+		transparent 100%
+	);
+	background-image: linear-gradient(
+		to bottom right,
+		lightgreen 90%,
+		transparent 100%
+	);
+	border: thick inset palegreen;
+}
+
+.buses{
+	
+}
+
+.hotels{
+	
+}
+
+.make{
+	
+}
+
+.charge{
+	position: relative; left: 20%;
+	width: 60%; 
+	font-size: 24px;
+}
+
+.hotels_notice{
+	color: red;
+	font-weight: bold;
+}
+
+.make_notice{
+	width: 60%;
+	text-align: left;
+	color: red;
+	position: relative; left: 20%;
+}
